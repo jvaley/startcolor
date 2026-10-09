@@ -98,3 +98,6 @@ html[data-theme=dark] .kinetic-stage .product-disc{background:#eaf4ff}html[data-
 
 /* Supplied StartColor identity: the source image contains light and dark marks. */
 .brand-logo{position:relative;display:block;overflow:hidden;flex:0 0 auto;aspect-ratio:1536 / 539}.brand-logo img{display:block;width:100%;height:auto;max-width:none}.brand-logo .logo-dark{position:absolute;left:0;top:0;transform:translateY(-52.64%);visibility:hidden}.brand-logo-header{width:152px}.brand-logo-hero{width:345px}.hero-official-logo:has(.brand-logo){display:block;min-height:0;margin-bottom:18px}.brand-logo-hero .logo-dark{transform:translateY(-52.64%)}html[data-theme=dark] .brand-logo .logo-light{visibility:hidden}html[data-theme=dark] .brand-logo .logo-dark{visibility:visible;transform:translateY(-52.64%)}footer .brand-logo-header{width:176px}@media(max-width:700px){.brand-logo-header{width:126px}.brand-logo-hero{width:280px}footer .brand-logo-header{width:146px}}
+
+/* Override legacy logo image rules so each theme is clipped to its own panel. */
+.hero-official-logo .brand-logo img,.brand.brand-official .brand-logo img{width:100%!important;height:auto!important;max-width:none!important;object-fit:initial!important}.hero-official-logo .brand-logo{height:auto!important}
